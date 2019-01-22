@@ -1,3 +1,26 @@
+html, body {
+  @include laptops {
+    font-size: 15px;
+  }
 
+  @include phones {
+    font-size: 14px;
+  }
+
+  @include phones-small {
+    font-size: 13px;
+  }
+}
+
+body {
+  font-family: 'SF', sans-serif;
+  background-color: $black;
+  color: $font-gray;
+}
+
+.wrapper {
+  height: 100vh;
+  min-height: 650px;
+}
 
 

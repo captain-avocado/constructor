@@ -1,8 +1,39 @@
 .header {
-  height: 50px;
+  display: flex;
 
-  @include phones {
-    height: 20px;
+  &__right, &__left {
+    display: flex;
+    align-items: center;
   }
 
+  &__right {
+    margin-right: auto;
+  }
+
+  &__logo {
+    margin: 0 15px;
+  }
+
+  &__info {
+    display: flex;
+  }
+
+  &__menus {
+    display: flex;
+    margin-right: 14vw;
+  }
+
+  &__lang {
+    padding: 0 20px;
+    border-left: 1px solid #5E5E7B;
+    margin: auto;
+  }
+
+  &__web-num {
+    margin-right: 25px;
+  }
+
+  &__miss-off {
+    margin-right: 22px;
+  }
 }
